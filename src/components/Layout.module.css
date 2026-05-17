@@ -1,0 +1,151 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(12px);
+  background: rgba(12 18 16 / 0.82);
+  border-bottom: 1px solid var(--border);
+}
+
+.headerInner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.headerTools {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.adminLink {
+  font-size: 0.88rem;
+  padding: 0.45rem 0.9rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.adminLink:hover {
+  text-decoration: none;
+}
+
+.userHint {
+  font-size: 0.88rem;
+  color: var(--muted);
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.logoutBtn {
+  font-size: 0.88rem;
+  padding: 0.45rem 0.85rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.brand strong {
+  display: block;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+
+.brandSub {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.brandMark {
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: linear-gradient(145deg, var(--accent) 0%, var(--accent-dim) 100%);
+  box-shadow: 0 8px 20px rgba(45 212 191 / 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.brandLetter {
+  font-family: "DM Sans", system-ui, sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #042f2e;
+  user-select: none;
+}
+
+.nav {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.navLink {
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.navLink:hover {
+  color: var(--text);
+  text-decoration: none;
+  background: rgba(255 255 255 / 0.04);
+}
+
+.navLinkActive {
+  color: #042f2e;
+  background: var(--accent);
+  border-color: rgba(255 255 255 / 0.15);
+}
+
+.navLinkActive:hover {
+  color: #042f2e;
+  background: var(--accent);
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1.5rem 1.25rem 2rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  max-width: 720px;
+  margin-inline: auto;
+}
